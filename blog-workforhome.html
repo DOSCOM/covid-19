@@ -24,12 +24,31 @@
   <link rel="stylesheet" href="css/style.css">
 
 </head>
+<style>
+    @media screen and (min-width: 300px) {
+     div.example {
+         font-size: 15px;
+     }
+ }
+
+ @media screen and (max-width: 300px) {
+     div.example {
+         font-size: 15px;
+     }
+ }
+</style>
 
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img height= 60px src="images/logo apps.png"> UDINUS PEDULI CORONA</a>
+            <a class="navbar-brand" href="index.html">
+                <div class="example">
+                    <span class="responsive"><img src="images/logo apps.png" width="80" height="80" class="mr-2"></span>
+                    Udinus Peduli Corona
+                </div>
+
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
