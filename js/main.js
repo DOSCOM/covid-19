@@ -10,10 +10,10 @@ $(document).ready(function ($) {
         window.addEventListener('load', function () {
             navigator.serviceWorker.register('/serviceworker.js').then(function (registration) {
                 // Registration was successful
-                console.log('ServiceWorker registration successful with scope: ', registration);
+                // console.log('ServiceWorker registration successful with scope: ', registration);
             }, function (err) {
                 // registration failed :(
-                console.log('ServiceWorker registration failed: ', err);
+                // console.log('ServiceWorker registration failed: ', err);
             });
         });
     }
@@ -260,7 +260,7 @@ $(document).ready(function ($) {
             }
         });
         $('body').on('activate.bs.scrollspy', function () {
-            console.log('nice');
+            // console.log('nice');
         })
     };
     OnePageNav();
