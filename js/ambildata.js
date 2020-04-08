@@ -33,13 +33,13 @@ $.ajax({
 	success: function (data) {
         document.getElementById("data-corona1").innerHTML = data.total;
         document.getElementById("data-corona2").innerHTML = "dan ODP sebanyak " + data.odp + " Manusia";
-		console.log(data.update);
-		console.log(data.total);
-		console.log(data.dirawat);
-		console.log(data.sembuh);
-		console.log(data.meninggal);
-		console.log(data.odp);
-		console.log(data.pdp);
+		// console.log(data.update);
+		// console.log(data.total);
+		// console.log(data.dirawat);
+		// console.log(data.sembuh);
+		// console.log(data.meninggal);
+		// console.log(data.odp);
+		// console.log(data.pdp);
 	},
 	error: function(response){
 		console.log('bridge server error');
