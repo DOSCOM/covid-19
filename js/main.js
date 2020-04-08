@@ -4,19 +4,19 @@ AOS.init({
 });
 
 
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-        // Registration was successful
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }, function(err) {
-        // registration failed :(
-        console.log('ServiceWorker registration failed: ', err);
-      });
-    });
-  }
 
-$(document).ready(function($) {
+$(document).ready(function ($) {
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('/serviceworker.js').then(function (registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration);
+            }, function (err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
 
     "use strict";
 
@@ -31,8 +31,8 @@ $(document).ready(function($) {
 
 
     // loader
-    var loader = function() {
-        setTimeout(function() {
+    var loader = function () {
+        setTimeout(function () {
             if ($('#ftco-loader').length > 0) {
                 $('#ftco-loader').removeClass('show');
             }
@@ -40,7 +40,7 @@ $(document).ready(function($) {
     };
     loader();
 
-    var carousel = function() {
+    var carousel = function () {
         $('.carousel').owlCarousel({
             loop: true,
             margin: 10,
@@ -141,8 +141,8 @@ $(document).ready(function($) {
     carousel();
 
     // scroll
-    var scrollWindow = function() {
-        $(window).scroll(function() {
+    var scrollWindow = function () {
+        $(window).scroll(function () {
             var $w = $(this),
                 st = $w.scrollTop(),
                 navbar = $('.ftco_navbar'),
@@ -180,17 +180,16 @@ $(document).ready(function($) {
     };
     scrollWindow();
 
-    var counter = function() {
+    var counter = function () {
 
-        $('.section-counter').waypoint(function(direction) {
+        $('.section-counter').waypoint(function (direction) {
 
             if (direction === 'down' && !$(this.element).hasClass('ftco-animated')) {
 
                 var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
-                $(this.element).find('.ftco-number').each(function() {
+                $(this.element).find('.ftco-number').each(function () {
                     var $this = $(this),
                         num = $this.data('number');
-                    console.log(num);
                     $this.animateNumber({
                         number: num,
                         numberStep: comma_separator_number_step
@@ -206,20 +205,20 @@ $(document).ready(function($) {
 
 
 
-    var contentWayPoint = function() {
+    var contentWayPoint = function () {
         var i = 0;
-        $('.ftco-animate').waypoint(function(direction) {
+        $('.ftco-animate').waypoint(function (direction) {
 
             if (direction === 'down' && !$(this.element).hasClass('ftco-animated')) {
 
                 i++;
 
                 $(this.element).addClass('item-animate');
-                setTimeout(function() {
+                setTimeout(function () {
 
-                    $('body .ftco-animate.item-animate').each(function(k) {
+                    $('body .ftco-animate.item-animate').each(function (k) {
                         var el = $(this);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             var effect = el.data('animate-effect');
                             if (effect === 'fadeIn') {
                                 el.addClass('fadeIn ftco-animated');
@@ -243,15 +242,15 @@ $(document).ready(function($) {
     contentWayPoint();
 
     // navigation
-    var OnePageNav = function() {
-        $(".smoothscroll[href^='#'], #ftco-nav ul li a[href^='#']").on('click', function(e) {
+    var OnePageNav = function () {
+        $(".smoothscroll[href^='#'], #ftco-nav ul li a[href^='#']").on('click', function (e) {
             e.preventDefault();
 
             var hash = this.hash,
                 navToggler = $('.navbar-toggler');
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 700, 'easeInOutExpo', function() {
+            }, 700, 'easeInOutExpo', function () {
                 window.location.hash = hash;
             });
 
@@ -260,7 +259,7 @@ $(document).ready(function($) {
                 navToggler.click();
             }
         });
-        $('body').on('activate.bs.scrollspy', function() {
+        $('body').on('activate.bs.scrollspy', function () {
             console.log('nice');
         })
     };
