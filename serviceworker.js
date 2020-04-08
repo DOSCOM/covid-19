@@ -1,61 +1,140 @@
-var CACHE_NAME = 'testing_1';
-var urlsToCache = [
-  '/',
-  // '/css/*.css',
-  // '/images/*.png',
-  // '/images/*.JPG',
-  // '/images/*.jpg',
-  // '/images/*.jpeg',
-  // '/images/icons/*.png',
-  // '/js/*.js',
-  // '/js/*.min.js',
-  // '/scss/*.scss',
-  // '/scss/bootstrap/*.scss',
-  // '/scss/bootstrap/mixins/*.scss',
-  // '/scss/bootstrap/utilities/*.scss',
-  // '/assets/css/bootstrap.min.css',
-  // '/assets/js/*.min.css'
+var cacheName = 'coba';
+var assets = [
+  '/index.html',
+  './js/ambildata.js',
+  './js/aos.js',
+  './js/bootstrap-datepicker.js',
+  './js/bootstrap.min.js',
+  './js/google-map.js',
+  './js/jquery-3.2.1.min.js',
+  './js/jquery-migrate-3.0.1.min.js',
+  './js/jquery.animateNumber.min.js',
+  './js/jquery.easing.1.3.js',
+  './js/jquery.magnific-popup.min.js',
+  './js/jquery.min.js',
+  './js/jquery.stellar.min.js',
+  './js/jquery.timepicker.min.js',
+  './js/jquery.waypoints.min.js',
+  './js/main.js',
+  './js/owl.carousel.min.js',
+  './js/popper.min.js',
+  './images/1.jpg',
+  './images/2.jpeg',
+  './images/PencegahanVirusmasyarakat.JPG',
+  './images/Untitled-1.jpg',
+  './images/arham.jpg',
+  './images/bg_1.jpg',
+  './images/bg_2.jpg',
+  './images/bg_3.jpg',
+  './images/coronaedu.mp4',
+  './images/cucitangan.JPG',
+  './images/dirumah.jpg',
+  './images/donasi.png',
+  './images/edi.jpg',
+  './images/etikabatuk.JPG',
+  './images/g1.jpg',
+  './images/g10.jpeg',
+  './images/g11.jpg',
+  './images/g12.jpg',
+  './images/g2.jpg',
+  './images/g3.jpg',
+  './images/g4.jpeg',
+  './images/g5.jpg',
+  './images/g6.jpg',
+  './images/g7.jpg',
+  './images/g8.jpeg',
+  './images/g9.jpg',
+  './images/galery_bg.jpeg',
+  './images/gejalacovid.JPG',
+  './images/gereja.JPG',
+  './images/germas.JPG',
+  './images/head.png',
+  './images/icon',
+  './images/icon.png',
+  './images/img_1.jpg',
+  './images/img_2.jpg',
+  './images/img_3.1.jpg',
+  './images/img_3.jpg',
+  './images/img_3.png',
+  './images/img_4.jpg',
+  './images/img_5.jpg',
+  './images/img_6.jpg',
+  './images/img_7.png',
+  './images/kusni.jpg',
+  './images/logo apps.png',
+  './images/masjid.jpg',
+  './images/masker.JPG',
+  './images/nelayan.JPG',
+  './images/ojek.jpg',
+  './images/pencegahanuntukkesehatan.JPG',
+  './images/penyemprotan.jpg',
+  './images/person_1.jpg',
+  './images/person_2.jpg',
+  './images/person_3.jpg',
+  './images/person_4.jpg',
+  './images/petani.JPG',
+  './images/pulung.jpg',
+  './images/rindra.jpg',
+  './images/transmigran.JPG',
+  './images/udinus.png',
+  './images/udinuscover.png',
+  './images/work.jpg',
+  './images/icon/android-icon-192x192-dunplab-manifest-107.png',
+  './images/icon/apple-icon-114x114-dunplab-manifest-107.png',
+  './images/icon/apple-icon-120x120-dunplab-manifest-107.png',
+  './images/icon/apple-icon-144x144-dunplab-manifest-107.png',
+  './images/icon/apple-icon-152x152-dunplab-manifest-107.png',
+  './images/icon/apple-icon-180x180-dunplab-manifest-107.png',
+  './images/icon/apple-icon-57x57-dunplab-manifest-107.png',
+  './images/icon/apple-icon-60x60-dunplab-manifest-107.png',
+  './images/icon/apple-icon-72x72-dunplab-manifest-107.png',
+  './images/icon/apple-icon-76x76-dunplab-manifest-107.png',
+  './images/icon/favicon-16x16-dunplab-manifest-107.png',
+  './images/icon/favicon-32x32-dunplab-manifest-107.png',
+  './images/icon/favicon-96x96-dunplab-manifest-107.png',
+  './images/icon/logo512x.png',
+  './css/ajax-loader.gif',
+  './css/animate.css',
+  './css/aos.css',
+  './css/bootstrap-datepicker.css',
+  './css/bootstrap.css',
+  './css/fancybox.min.css',
+  './css/flaticon.css',
+  './css/icomoon.css',
+  './css/ionicons.min.css',
+  './css/jquery.timepicker.css',
+  './css/magnific-popup.css',
+  './css/open-iconic-bootstrap.min.css',
+  './css/owl.carousel.css',
+  './css/owl.carousel.min.css',
+  './css/owl.theme.default.css',
+  './css/owl.theme.default.min.css',
+  './css/owl.theme.green.css',
+  './css/owl.theme.green.min.css',
+  './css/owl.video.play.png',
+  './css/style.css',
+  'https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js',
+  // 'https://code.iconify.design/1/1.0.5/iconify.min.js',
+  'https://fonts.googleapis.com/css?family=Overpass:300,400,500|Dosis:400,700',
 ];
 
-self.addEventListener('install', function(event) {
-  // Perform install steps
+self.addEventListener('install', function (event) {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(function(cache) {
-        console.log('in install service worker ... cache opened!');
-        return cache.addAll(urlsToCache);
-      })
-  );
+    caches.open(cacheName).then(function (cache) {
+      console.log('Caching Assets');
+      return cache.addAll(assets);
+    })
+  )
 });
 
-self.addEventListener('fetch', function(event) {
-    event.respondWith(
-      caches.match(event.request)
-        .then(function(response) {
-          // Cache hit - return response
-          if (response) {
-            return response;
-          }
-          return fetch(event.request);
-        }
-      )
-    );
-  });
-  
-self.addEventListener('activate', function(event) {
+self.addEventListener('activate', function (event) {
 
-    var cacheWhitelist = ['testing_1'];
-  
-    event.waitUntil(
-      caches.keys().then(function(cacheNames) {
-        return Promise.all(
-          cacheNames.filter(function(cacheName){
-              return cacheName != CACHE_NAME
-          }).map(function(cacheName){
-              return  caches.delete(cacheName)
+});
 
-          })
-        );
-      })
-    );
-  });
+self.addEventListener('fetch', function (event) {
+  event.respondWith(
+    caches.match(event.request).then(function (cacheRes) {
+      return cacheRes || fetch(event.request);
+    })
+  );
+});
