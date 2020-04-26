@@ -25,6 +25,25 @@
 
 </head>
 <style>
+
+.video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
     @media screen and (min-width: 300px) {
      div.example {
          font-size: 15px;
@@ -169,8 +188,26 @@
   <div class="featured-section overlay-color-2" style="background-image: url('images/bg_3.jpg');">
 
     <div class="container">
-      <div class="row">
 
+        <div class="row mt-2">
+            <div class="col-md-6 pl-md-5">
+                <div class="block-38">
+                    <div class="video-container mr-5" controls autoplay>
+                        <iframe width="800" height="800" src="images/benedit.mp4" frameborder="0" allowfullscreen value="controls autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 pl-md-5 welcome-text">
+                <h2 class="display-4 mb-3">PENCEGAHAN CORONA MENCEGAH LEBIH BAIK DARI PADA MENGOBATI</h2>
+                <p class="lead"> Selalu mengikuti arahan dari pemerintah adalah solusi terbaik dalam mencegah penyebaran virus corona ini seperti selalu mencuci tangan dll. 
+                </p>
+                <p class="mb-4">animasi Karya(mhs udinus) : Benedit pastuka L , Handi Tri Wibowo , Kholida Husna</p>
+              
+            </div>
+        </div>
+
+
+      <div class="row mt-4">
         <div class="col-md-6">
           <img src="images/masker.JPG" width="500" height="500" alt="Image placeholder" class="img-fluid imgposter">
         </div>
