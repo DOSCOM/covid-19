@@ -24,25 +24,25 @@
 // })
 
 $.ajax({
-	type: 'post',
-	dataType: 'JSON',
-	url: 'https://cors-anywhere.herokuapp.com/https://corona.jatengprov.go.id/realtime-data',
-	beforeSend: function (xhr, options) {
-		console.log('Loading Data');
-	},
-	success: function (data) {
+    type: 'post',
+    dataType: 'JSON',
+    url: 'https://cors-anywhere.herokuapp.com/https://corona.jatengprov.go.id/realtime-data',
+    beforeSend: function(xhr, options) {
+        console.log('Loading Data');
+    },
+    success: function(data) {
         document.getElementById("data-corona1").innerHTML = data.total;
-        document.getElementById("data-corona2").innerHTML = "dan ODP sebanyak " + data.odp + " Manusia";
-		// console.log(data.update);
-		// console.log(data.total);
-		// console.log(data.dirawat);
-		// console.log(data.sembuh);
-		// console.log(data.meninggal);
-		// console.log(data.odp);
-		// console.log(data.pdp);
-	},
-	error: function(response){
-		console.log('bridge server error');
-		console.log(response);
-	}
+        document.getElementById("data-corona2").innerHTML = "dan ODP sebanyak " + data.odp + " Orang";
+        // console.log(data.update);
+        // console.log(data.total);
+        // console.log(data.dirawat);
+        // console.log(data.sembuh);
+        // console.log(data.meninggal);
+        // console.log(data.odp);
+        // console.log(data.pdp);
+    },
+    error: function(response) {
+        console.log('bridge server error');
+        console.log(response);
+    }
 });

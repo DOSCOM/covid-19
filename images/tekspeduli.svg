@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="tekspeduli.svg"
+   inkscape:version="1.0beta2 (unknown)"
+   id="svg12842"
+   version="1.1"
+   viewBox="0 0 297 210"
+   height="210mm"
+   width="297mm">
+  <defs
+     id="defs12836">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter11391"
+       x="-0.020109961"
+       width="1.0402199"
+       y="-0.15221409"
+       height="1.3044282">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.23922"
+         id="feGaussianBlur11393" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="0"
+     inkscape:window-x="1366"
+     inkscape:window-height="987"
+     inkscape:window-width="1280"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="560"
+     inkscape:cx="400"
+     inkscape:zoom="0.44092527"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata12839">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <g
+       id="g11453"
+       transform="matrix(1.7408382,0,0,1.7408382,-44.907924,-208.72711)">
+      <g
+         style="fill:#000000;fill-opacity:1;filter:url(#filter11391)"
+         id="g11389"
+         transform="translate(-22.440811,21.733338)">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#0000a2;stroke-width:0.451385;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:fill markers stroke"
+           id="rect11377"
+           width="147.89328"
+           height="19.53911"
+           x="61.49955"
+           y="145.96207"
+           ry="4.3167815" />
+        <rect
+           ry="4.3121376"
+           y="145.97258"
+           x="61.507668"
+           height="19.518085"
+           width="94.918259"
+           id="rect11379"
+           style="fill:#000000;fill-opacity:1;stroke:#0000a2;stroke-width:0.469853;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:fill markers stroke" />
+        <text
+           transform="scale(0.87842725,1.1383982)"
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.9255px;line-height:1.25;font-family:Jomolhari;-inkscape-font-specification:'Jomolhari Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.273137"
+           x="78.334473"
+           y="140.82657"
+           id="text11383"><tspan
+             sodipodi:role="line"
+             id="tspan11381"
+             x="78.334473"
+             y="140.82657"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.9255px;font-family:Jomolhari;-inkscape-font-specification:'Jomolhari Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0.273137">UDINUS PEDULI</tspan></text>
+        <text
+           transform="scale(0.89596639,1.1161133)"
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6018px;line-height:1.25;font-family:Jomolhari;-inkscape-font-specification:'Jomolhari Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:#fff500;stroke-width:0.166981;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+           x="178.40305"
+           y="143.39203"
+           id="text11387"><tspan
+             sodipodi:role="line"
+             id="tspan11385"
+             x="178.40305"
+             y="143.39203"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6018px;font-family:Jomolhari;-inkscape-font-specification:'Jomolhari Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:#fff500;stroke-width:0.166981;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers">COVID-19</tspan></text>
+      </g>
+      <g
+         transform="translate(-22.440811,21.733338)"
+         id="g11375">
+        <rect
+           ry="4.3167815"
+           y="145.96207"
+           x="61.49955"
+           height="19.53911"
+           width="147.89328"
+           id="rect10169"
+           style="fill:#0000a2;fill-opacity:1;stroke:#0000a2;stroke-width:0.451385;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:fill markers stroke" />
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:#0000a2;stroke-width:0.469853;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:fill markers stroke"
+           id="rect10171"
+           width="94.918259"
+           height="19.518085"
+           x="61.507668"
+           y="145.97258"
+           ry="4.3121376" />
+        <text
+           id="text10175"
+           y="140.82657"
+           x="78.334473"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.9255px;line-height:1.25;font-family:Jomolhari;-inkscape-font-specification:'Jomolhari Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000a2;fill-opacity:1;stroke:none;stroke-width:0.273137"
+           xml:space="preserve"
+           transform="scale(0.87842725,1.1383982)"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.9255px;font-family:Jomolhari;-inkscape-font-specification:'Jomolhari Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000a2;fill-opacity:1;stroke-width:0.273137"
+             y="140.82657"
+             x="78.334473"
+             id="tspan10173"
+             sodipodi:role="line">UDINUS PEDULI</tspan></text>
+        <text
+           id="text10179"
+           y="143.39203"
+           x="178.40305"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6018px;line-height:1.25;font-family:Jomolhari;-inkscape-font-specification:'Jomolhari Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fff500;fill-opacity:1;stroke:#fff500;stroke-width:0.166981;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+           xml:space="preserve"
+           transform="scale(0.89596639,1.1161133)"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6018px;font-family:Jomolhari;-inkscape-font-specification:'Jomolhari Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fff500;fill-opacity:1;stroke:#fff500;stroke-width:0.166981;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+             y="143.39203"
+             x="178.40305"
+             id="tspan10177"
+             sodipodi:role="line">COVID-19</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
